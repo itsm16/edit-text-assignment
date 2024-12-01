@@ -37,8 +37,8 @@ redoBtn.addEventListener("click", () => {
 
 let stage = new Konva.Stage({
   container: "canvas",
-  width: 700,
-  height: 800,
+  width: 800,
+  height: 700,
 });
 
 
