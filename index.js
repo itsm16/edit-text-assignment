@@ -55,9 +55,6 @@ let text = new Konva.Text({
   draggable: true,
 });
 
-layer.add(text);
-layer.draw();
-
 let addButton = d.querySelector(".add__text");
 
 addButton.addEventListener("click", () => {
