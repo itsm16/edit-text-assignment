@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="nav__top">
+        <div class="nav__top__logo">
+          <img src="./assets/images.jpeg" alt="" />
+        </div>
+        <button class="undo button">
+          <img src="./assets/arrow-go-back-line.svg" alt="undo" />
+        </button>
+        <button class="redo button">
+          <img src="./assets//arrow-go-forward-line.svg" alt="redo" />
+        </button>
+      </div>
+      <div class="nav__bottom">
+        <button class="add__text">Add Text</button>
+      </div>
+      <div class="main">
+        <div class="main__container">
+          <div id="canvas"></div>
+          <div class="main__bottom">
+            <div class="font__name">
+              <select name="font" id="font-select">
+                <option value="Calibri">Calibri</option>
+                <option value="Arial">Arial</option>
+              </select>
+            </div>
+            <div class="font__size">
+              <img
+                class="plusButton"
+                src="./assets/add-fill.svg"
+                alt="add-fill"
+              />
+              <div class="font__size__count"></div>
+              <img
+                class="minusButton"
+                src="./assets//subtract-line.svg"
+                alt="subtract-line"
+              />
+            </div>
+            <div class="font__style">
+              <div class="bold__btn">
+                <img src="./assets/bold.svg" alt="" />
+              </div>
+              <div class="italic__btn">
+                <img src="./assets/italic.svg" alt="" />
+              </div>
+              <div class="center__btn">
+                <img src="./assets/align-center.svg" alt="" />
+              </div>
+              <div class="underline__btn">
+                <img src="./assets/underline.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
