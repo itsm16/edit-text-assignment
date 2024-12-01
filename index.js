@@ -37,10 +37,10 @@ redoBtn.addEventListener("click", () => {
 
 let stage = new Konva.Stage({
   container: "canvas",
-  width: 500,
-  height: 500,
-  fill: "red",
+  width: 700,
+  height: 800,
 });
+
 
 let layer = new Konva.Layer();
 stage.add(layer);
@@ -68,8 +68,7 @@ text.on("dblclick", () => {
   input.type = "text";
   input.value = text.text();
   input.style.position = "absolute";
-  input.style.top = `${stage.container().getBoundingClientRect().top + text.getClientRect().top}px`;
-  input.style.left = `${stage.container().getBoundingClientRect().left + text.getClientRect().left}px`;
+  input.style.top = "15vh";
 
   d.body.appendChild(input);
   input.focus();
